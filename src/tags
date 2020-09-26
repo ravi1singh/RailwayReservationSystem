@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FALSE	server.c	29;"	d	file:
+MAX	client.c	25;"	d	file:
+PORT	client.c	26;"	d	file:
+PORT	server.c	30;"	d	file:
+SA	client.c	27;"	d	file:
+TRUE	server.c	28;"	d	file:
+acquireLock	serverModules.c	/^int acquireLock(struct flock *fl,int uid){$/;"	f
+addNewAccount	admin.c	/^int addNewAccount(struct account acc){$/;"	f
+addNewCredentials	admin.c	/^int addNewCredentials(struct credentials cred){$/;"	f
+addNewTrain	admin.c	/^int addNewTrain(struct train newTrain)$/;"	f
+adminMenu	clientModules.c	/^void adminMenu(int sockFd)$/;"	f
+agentMenu	clientModules.c	/^void agentMenu(int sockFd,int uid){$/;"	f
+bookTicketAgent	agent.c	/^int bookTicketAgent(struct bookingRequest *req,struct booking *ticket){$/;"	f
+bookTicketUser	normal.c	/^int bookTicketUser(struct bookingRequest *req,struct booking *ticket,int userLockFd){$/;"	f
+cancelTicketAgent	agent.c	/^int cancelTicketAgent(struct booking *ticket){$/;"	f
+cancelTicketUser	normal.c	/^int cancelTicketUser(struct booking *ticket,int userLockFd){$/;"	f
+cancelTrainSeat	normal.c	/^int cancelTrainSeat(struct booking *ticket){$/;"	f
+clientFd	server.c	/^	int clientFd;$/;"	m	struct:clientInfo	file:
+clientInfo	server.c	/^struct clientInfo{$/;"	s	file:
+clientNo	server.c	/^	int clientNo;$/;"	m	struct:clientInfo	file:
+clients	server.c	/^int clients[1000];$/;"	v
+connectionHandler	server.c	/^void  connectionHandler(struct clientInfo *arg){$/;"	f
+deleteAccount	admin.c	/^int deleteAccount(int uid){$/;"	f
+deleteTrain	admin.c	/^int deleteTrain(int trainNo){$/;"	f
+doLogin	serverModules.c	/^void doLogin(struct clientRequest *creq,struct serverAck *serAck){$/;"	f
+flushBuffer	client.c	/^void flushBuffer(){$/;"	f
+flushBuffer	serverModules.c	/^void flushBuffer(){$/;"	f
+getBookingIndex	clientModules.c	/^int getBookingIndex(struct booking ticket[],int bid,int totalBookings){$/;"	f
+getBookingIndex	normal.c	/^int getBookingIndex(struct booking ticket[],int bid,int totalBookings){$/;"	f
+loginVerify	admin.c	/^int loginVerify(struct login user){$/;"	f
+main	client.c	/^int main() $/;"	f
+main	server.c	/^int main(int argc , char *argv[]) $/;"	f
+modifyAccount	admin.c	/^int modifyAccount(struct account *acc,int uid)$/;"	f
+modifyTrain	admin.c	/^int modifyTrain(struct train *tr,int trainNo)$/;"	f
+noClients	server.c	/^int noClients;$/;"	v
+normalUserMenu	clientModules.c	/^void normalUserMenu(int sockFd,int uid){$/;"	f
+printAccountDetails	clientModules.c	/^void printAccountDetails(struct account acc){$/;"	f
+printTicket	clientModules.c	/^void printTicket(struct booking ticket,int sockFd){$/;"	f
+printTrainDetails	clientModules.c	/^void printTrainDetails(struct train tr)$/;"	f
+releaseLock	serverModules.c	/^int releaseLock(struct flock *fl,int fd){$/;"	f
+reserveTrainSeat	normal.c	/^int reserveTrainSeat(struct bookingRequest *req,struct booking *ticket){$/;"	f
+searchAccount	admin.c	/^int searchAccount(struct account *acc,int uid){$/;"	f
+searchAccountAgent	agent.c	/^int searchAccountAgent(struct account *acc,int uid){$/;"	f
+searchAccountUser	normal.c	/^int searchAccountUser(struct account *acc,int uid,int userLockFd){$/;"	f
+searchTrain	admin.c	/^int searchTrain(struct train *tr,int trainNo){$/;"	f
+shiftRecords	normal.c	/^void shiftRecords(struct booking booked[],int left,int right){$/;"	f
+viewPreviousBookingAgent	agent.c	/^int viewPreviousBookingAgent(struct prevBookings *prev,int uid){$/;"	f
+viewPreviousBookingUser	normal.c	/^int viewPreviousBookingUser(struct prevBookings *prev,int uid,int userLockFd){$/;"	f
